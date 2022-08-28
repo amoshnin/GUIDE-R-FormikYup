@@ -17,7 +17,7 @@ interface PropsType {
 
 const InputField: FC<PropsType> = (props) => {
   const { errorText, ...restProps } = props
-  const [field, meta] = useField(props.defaultProps.name)
+  const [field, meta] = useField(props.defaultProps.name as stirng)
 
   const renderHelperText = () => {
     const [touched, error] = at(meta, "touched", "error")
