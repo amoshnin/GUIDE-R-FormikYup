@@ -32,7 +32,7 @@ const CheckboxField: FC<PropsType> = (props) => {
     }
   }
 
-  function onChange(e) {
+  function onChange(e: React.ChangeEvent<HTMLInputElement>) {
     setValue(e.target.checked)
   }
 
