@@ -29,7 +29,7 @@ export default [
       .test(
         "len",
         `${zipcode.invalidErrorMsg}`,
-        (val) => val && val.length === 5
+        (val) => val?.length === 5
       ),
     [country.name]: yup
       .string()
